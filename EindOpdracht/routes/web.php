@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Index');
 });
+
+Route::get('Home','Home@Index')->name("welkom");//routing name
+Route::get('Zoek','Zoek@zoek')->name("welkom");//routing name
+Route::get('Verwijder','Verwijder@remove')->name("welkom");//routing name
